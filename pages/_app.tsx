@@ -42,7 +42,6 @@ const logo = (
       height="100%"
       fill="#FFFFFF"
       fill-opacity="1"
-      class="background"
       style={myDisplayNone}
     ></rect>
     <rect
@@ -53,10 +52,9 @@ const logo = (
       height="100%"
       fill="url(#watermark)"
       fill-opacity="1"
-      class="watermarklayer"
       style={myDisplayNone}
     ></rect>
-    <g data-v-0dd9719b="" class="imagesvg isNoFont">
+    <g data-v-0dd9719b="">
       <g>
         <rect
           fill="#FF7600"
@@ -66,7 +64,6 @@ const logo = (
           y="0"
           width="60"
           height="52.800168960540674"
-          class="image-rect"
         ></rect>
         <svg
           filter="url(#colors8319302225)"
@@ -74,8 +71,7 @@ const logo = (
           y="0"
           width="60"
           height="52.800168960540674"
-          filtersec="colorsf8922262583"
-          class="image-svg-svg primary"
+          // filtersec=colorsf8922262583
           style={myVisible}
         >
           <svg
@@ -98,21 +94,18 @@ const logo = (
         <feColorMatrix
           type="matrix"
           values="0 0 0 0 0.99609375  0 0 0 0 0.4609375  0 0 0 0 0  0 0 0 1 0"
-          class="icon-fecolormatrix"
         ></feColorMatrix>
       </filter>
       <filter id="colorsf8922262583">
         <feColorMatrix
           type="matrix"
           values="0 0 0 0 0.99609375  0 0 0 0 0.99609375  0 0 0 0 0.99609375  0 0 0 1 0"
-          class="icon-fecolormatrix"
         ></feColorMatrix>
       </filter>{" "}
       <filter id="colorsb4533402047">
         <feColorMatrix
           type="matrix"
           values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"
-          class="icon-fecolormatrix"
         ></feColorMatrix>
       </filter>
     </defs>
