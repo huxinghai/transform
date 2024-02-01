@@ -1,7 +1,7 @@
 import ConversionPanel from "@components/ConversionPanel";
 import { useCallback } from "react";
 import * as React from "react";
-import jsonToGo from "json-to-go";
+import jsonToGo from "@utils/json-to-go";
 import gofmt from "gofmt.js";
 
 export default function JsonToGo() {
