@@ -27,7 +27,7 @@ export const Meta = ({ title, description, url }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="ritz078" />
       <link rel="manifest" href="/static/site.webmanifest" />
-      <script src="https://hm.baidu.com/hm.js?bcf63af546ba766b6c67cdb5819120f2" />
+      <script src="https://hm.baidu.com/hm.js?602ecbdf23efc1cf99cdf0dea622e2c8" />
     </Head>
   );
 };
