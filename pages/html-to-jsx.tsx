@@ -53,7 +53,7 @@ export default function HtmlToJsxComponent() {
     ({ open, toggle }) => {
       return (
         <Form<Settings>
-          title="HTML to JSX"
+          title="HTML 转 JSX"
           onSubmit={setSettings}
           open={open}
           toggle={toggle}

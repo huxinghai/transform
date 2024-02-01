@@ -11,7 +11,8 @@ export const categorizedRoutes = [
         path: "/",
         packageName: "@svgr/core",
         packageUrl: "https://github.com/smooth-code/svgr",
-        title: "Transform | A polyglot web converter."
+        title:
+          "云库工具 | 开发语言转换，快速高效前端网页转换工具，将为您节省大量时间."
       },
       {
         label: "to React Native",
@@ -405,13 +406,22 @@ export const routes = flatten(
     a.content.map(x => {
       const _label =
         a.category.toLowerCase() !== "others"
+          ? `在线${a.category}${x.label.replace("to ", "转换为")}`
+          : x.label.replace(" to ", "转换为");
+
+      const searchTermTmp =
+        a.category.toLowerCase() !== "others"
           ? `${a.category} ${x.label}`
           : x.label;
+
       return {
         ...x,
         category: a.category,
-        searchTerm: _label,
-        desc: x.desc || `An online playground to convert ${_label}`
+        title: _label,
+        searchTerm: searchTermTmp,
+        desc:
+          x.desc ||
+          `在线开发语言转换功能的工具，快速高效的前端网页转换工具，将为您节省大量时间，${_label}`
       };
     })
   )
@@ -423,6 +433,7 @@ export function activeRouteData(
   label: string;
   path: string;
   searchTerm: string;
+  title: string;
   desc: string;
   packageUrl?: string;
   packageName?: string;

@@ -76,7 +76,7 @@ export default function Navigator() {
       </Pane>
 
       <Pane borderTop>
-        <a
+        {/*        <a
           href="https://vercel.com?utm_source=ritz078&utm_campaign=oss"
           target="_blank"
         >
@@ -89,11 +89,11 @@ export default function Navigator() {
               margin: "10px auto 0"
             }}
           />
-        </a>
+        </a>*/}
         <Heading size={400} paddingY={15} textAlign="center">
-          Created by{" "}
-          <a href="https://twitter.com/ritz078" target="_blank">
-            @ritz078
+          Powered by{" "}
+          <a href="https://github.com/ritz078/transform" target="_blank">
+            ritz078/transform
           </a>
         </Heading>
       </Pane>

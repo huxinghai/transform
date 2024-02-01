@@ -96,7 +96,7 @@ export default function EditorPanel({
           onClick={_toggleSettingsDialog}
           height={28}
         >
-          Settings
+          设置
         </Button>
 
         {settingElement({
