@@ -263,7 +263,7 @@ export default function EditorPanel({
             onClick={copyValue}
             height={28}
           >
-            Copy
+            复制
           </Button>
         )}
       </Pane>
