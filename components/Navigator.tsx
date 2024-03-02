@@ -76,25 +76,8 @@ export default function Navigator() {
       </Pane>
 
       <Pane borderTop>
-        {/*        <a
-          href="https://vercel.com?utm_source=ritz078&utm_campaign=oss"
-          target="_blank"
-        >
-          <img
-            src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-            alt="Vercel"
-            style={{
-              height: 40,
-              display: "block",
-              margin: "10px auto 0"
-            }}
-          />
-        </a>*/}
         <Heading size={400} paddingY={15} textAlign="center">
-          Powered by{" "}
-          <a href="https://github.com/ritz078/transform" target="_blank">
-            ritz078/transform
-          </a>
+          Powered by ritz078/transform
         </Heading>
       </Pane>
     </Pane>
