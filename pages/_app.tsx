@@ -150,10 +150,10 @@ export default function App(props) {
     <>
       {router.pathname === "/" || !router.pathname ? (
         <Meta
-          title={"在线开发语言转换工具 - 云库工具"}
+          title={"在线开发格式转换工具 - 云库工具"}
           url={`https://libkit.cn${router.pathname}`}
           description={
-            "在线开发语言转换功能的工具，快速高效的前端网页转换工具，将为您节省大量时间，云库工具。"
+            "在线开发格式转换功能的工具，快速高效的前端网页转换工具，将为您节省大量时间，云库工具。"
           }
         />
       ) : (
