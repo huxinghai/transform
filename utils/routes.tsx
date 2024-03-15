@@ -233,7 +233,12 @@ export const categorizedRoutes = [
         label: "to JSON",
         path: "/js-object-to-json",
         desc: "An online REPL for converting JS Object to JSON."
-      }
+      },
+      {
+        label: "to Typescript",
+        path: "/js-object-to-typescript",
+        desc: "An online REPL for converting JS Object to Typescript."
+      },
     ]
   },
   {
