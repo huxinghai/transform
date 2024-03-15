@@ -12,7 +12,7 @@ export const categorizedRoutes = [
         packageName: "@svgr/core",
         packageUrl: "https://github.com/smooth-code/svgr",
         title:
-          "云库工具 | 开发语言转换，快速高效前端网页转换工具，将为您节省大量时间."
+          "云库工具 | 在线代码转换，快速高效网页转换工具，将为您节省大量时间."
       },
       {
         label: "to React Native",
@@ -421,7 +421,7 @@ export const routes = flatten(
         searchTerm: searchTermTmp,
         desc:
           x.desc ||
-          `在线开发格式转换功能的工具，快速高效的前端网页转换工具，将为您节省大量时间，${_label}`
+          `${_label}，在线代码转换工具，快速高效的网页转换工具，将为您节省大量时间`
       };
     })
   )

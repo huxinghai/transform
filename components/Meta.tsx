@@ -12,7 +12,7 @@ export const Meta = ({ title, description, url }) => {
         sizes="32x32"
         href="/static/favicon_32.png"
       />
-      <meta content={description} name="description" />
+      <meta name="description" content={description} />
       <meta name="og:url" content={url} />
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description} />
