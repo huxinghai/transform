@@ -155,12 +155,16 @@ export default function App(props) {
           description={
             "在线代码转换工具，快速高效的网页转换工具，将为您节省大量时间，云库工具。"
           }
+          keywords={
+            "在线代码转换器,代码转换工具,json工具,xml工具,GraphQL工具,html工具,svg工具"
+          }
         />
       ) : (
         <Meta
           title={activeRoute?.title}
           url={`https://libkit.cn${router.pathname}`}
           description={activeRoute?.desc}
+          keywords={activeRoute?.keywords}
         />
       )}
       <Pane

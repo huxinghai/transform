@@ -11,14 +11,18 @@ export const categorizedRoutes = [
         path: "/",
         packageName: "@svgr/core",
         packageUrl: "https://github.com/smooth-code/svgr",
+        keywords:
+          "在线代码转换器,代码转换工具,json工具,xml工具,GraphQL工具,html工具,svg工具",
         title:
-          "云库工具 | 在线代码转换，快速高效网页转换工具，将为您节省大量时间."
+          "在线代码转换工具，快速高效的网页转换工具，将为您节省大量时间，云库工具。"
       },
       {
         label: "to React Native",
         path: "/svg-to-react-native",
         packageName: "@svgr/core",
-        packageUrl: "https://github.com/smooth-code/svgr"
+        packageUrl: "https://github.com/smooth-code/svgr",
+        keywords: "svg转换react native,react native工具",
+        desc: "在线SGV转换为React Native代码"
       }
     ]
   },
@@ -27,13 +31,17 @@ export const categorizedRoutes = [
     content: [
       {
         label: "to JSX",
-        path: "/html-to-jsx"
+        path: "/html-to-jsx",
+        keywords: "html转换jsx,html转换React类",
+        desc: "在线HTML转换为JSX(React类)"
       },
       {
         label: "to Pug",
         path: "/html-to-pug",
         packageName: "html2pug",
-        packageUrl: "https://github.com/izolate/html2pug"
+        packageUrl: "https://github.com/izolate/html2pug",
+        keywords: "html转换pug",
+        desc: "在线HTML转换为Pug格式"
       }
     ]
   },
@@ -43,24 +51,31 @@ export const categorizedRoutes = [
       {
         label: "to React PropTypes",
         path: "/json-to-proptypes",
-        title: "Transform | All important transforms at one place."
+        keywords: "json转换react propTypes",
+        desc: "在线JSON转换为React PropTypes"
       },
       {
         label: "to Flow",
-        path: "/json-to-flow"
+        path: "/json-to-flow",
+        keywords: "json转换flow",
+        desc: "在线JSON转换为Flow"
       },
       {
         label: "to GraphQL",
         path: "/json-to-graphql",
         packageName: "@walmartlabs/json-to-simple-graphql-schema",
         packageUrl:
-          "https://github.com/walmartlabs/json-to-simple-graphql-schema"
+          "https://github.com/walmartlabs/json-to-simple-graphql-schema",
+        keywords: "json转换graphql",
+        desc: "在线JSON转换为GraphQL"
       },
       {
         label: "to TypeScript",
         path: "/json-to-typescript",
         packageUrl: "https://www.npmjs.com/package/json_typegen_wasm",
-        packageName: "json_typegen_wasm"
+        packageName: "json_typegen_wasm",
+        keywords: "json转换TypeScript",
+        desc: "在线JSON转换为TypeScript"
       },
       {
         label: "to MobX-State-Tree Model",
@@ -398,6 +413,7 @@ export interface Route {
   path: string;
   label: string;
   desc: string;
+  keywords: string;
 }
 
 export const routes = flatten(
@@ -419,9 +435,8 @@ export const routes = flatten(
         category: a.category,
         title: _label,
         searchTerm: searchTermTmp,
-        desc:
-          x.desc ||
-          `${_label}，在线代码转换工具，快速高效的网页转换工具，将为您节省大量时间`
+        keywords: x.keywords || `${_label}`,
+        desc: x.desc || `${_label}`
       };
     })
   )
@@ -435,6 +450,7 @@ export function activeRouteData(
   searchTerm: string;
   title: string;
   desc: string;
+  keywords: string;
   packageUrl?: string;
   packageName?: string;
 } {

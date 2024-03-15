@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-export const Meta = ({ title, description, url }) => {
+export const Meta = ({ title, description, url, keywords }) => {
   return (
     <Head>
       <title>{title}</title>
@@ -12,6 +12,7 @@ export const Meta = ({ title, description, url }) => {
         sizes="32x32"
         href="/static/favicon_32.png"
       />
+      <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
       <meta name="og:url" content={url} />
       <meta name="og:title" content={title} />
