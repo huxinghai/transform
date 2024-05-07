@@ -75,11 +75,11 @@ export default function Navigator() {
         })}
       </Pane>
 
-      <Pane borderTop>
+      {/*      <Pane borderTop>
         <Heading size={400} paddingY={15} textAlign="center">
           Powered by ritz078/transform
         </Heading>
-      </Pane>
+      </Pane>*/}
     </Pane>
   );
 }
